@@ -17,6 +17,13 @@ main {
     flex: 1 0 auto;
 }
 
+.btn {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
 .container {
 	width: 95%;
 }
