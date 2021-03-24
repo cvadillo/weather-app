@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+nav .brand-logo {
+	padding-left: 15px;
+}
+
+.container {
+	width: 95%;
+}
+
+.card{
+	margin-top: 22.8px;
+}
+
+.card-content li {
+	margin: 10px;
+}
+
+.forecast {
+	justify-content: space-around;
+}
+
+main {
+    flex: 1 0 auto;
+}
