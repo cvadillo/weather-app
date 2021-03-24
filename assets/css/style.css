@@ -8,6 +8,15 @@ nav .brand-logo {
 	padding-left: 15px;
 }
 
+h6 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 .container {
 	width: 95%;
 }
@@ -17,13 +26,18 @@ nav .brand-logo {
 }
 
 .card-content li {
-	margin: 10px;
+	margin: 5px;
+}
+
+.main.card-content i {
+	font-size: 40px;
+	padding-bottom: 15px;
 }
 
 .forecast {
 	justify-content: space-around;
 }
 
-main {
-    flex: 1 0 auto;
+.row .col.m2 {
+	width: 20%;
 }
