@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+    <head>
+        <meta charset="utf-8">
+
+        <!-- NEED TO HOLD THIS FOR NOW -->
+        <title>Weather App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- MATERIAL ICONS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- WEATHER ICONS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css" integrity="sha512-r/Gan7PMSRovDus++vDS2Ayutc/cSdl268u047n4z+k7GYuR7Hiw71FsT3QQxdKJBVHYttOJ6IGLnlM9IoMToQ==" crossorigin="anonymous" />
+        <!-- MATERIALIZE CSS -->
+        <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css"  media="screen,projection"/>
+
+        <!-- THIS IS OUR MAIN STYLE SHEET -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <meta name="theme-color" content="#fafafa">
+    </head>
+
+    <body>
+        <header>
+            <!-- Nav-Bar -->
+            <div class="navbar-fixed ">
+                <nav class="blue darken-4">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo truncate">City Weather Searcher</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="sass.html">API</a></li>
+                            <li><a href="https://github.com/cvadillo">About</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>        
+        </header>
+
+        <main class="grey lighten-4 valign-wrapper">
+
+            <div class="container row" id="main">
+                <div class="col s3"></div>
+                <div class="col s6">
+                    <form class="input-field">
+                        <i class="material-icons prefix">search</i>
+                        <input id="city-search" type="text">
+                        <label for="icon_prefix" ></label>
+                        <span class="helper-text">Input a City to Look Up the Weather</span>
+                        <button class="btn red waves-effect waves-light" id="city-submit" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col s3"></div>
+            </div>
+
+            <form class="hide">
+                <input class=hide" id="search-again" type="text">
+            </form>
+        </main>
+<!-- FOOTER START -->
+    <footer class="page-footer blue darken-4">
+        <div class="container row">
+            <div class="col s12 center-align">
+                <p>©2021 Carlos Vadillo</p>
+            </div>
+        </div>
+    </footer>
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- Materialize CSS -->
+        <script src="./assets/js/materialize.min.js"></script>
+
+        <!-- THIS IS WHERE OUR JAVASCRIPT GOES -->
+        <script src="./assets/js/script.js"></script>
+
+    </body>
+
+</html>

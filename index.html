@@ -38,7 +38,7 @@
             <div class="navbar-fixed ">
                 <nav class="blue darken-4">
                     <div class="nav-wrapper">
-                        <a href="#" class="brand-logo truncate">City Weather Searcher</a>
+                        <a href="#" class="brand-logo truncate">City & Weather Searcher</a>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
                             <li><a href="sass.html">API</a></li>
                             <li><a href="https://github.com/cvadillo">About</a></li>
@@ -48,26 +48,155 @@
             </div>        
         </header>
 
-        <main class="grey lighten-4 valign-wrapper" id="main">
+        <main class="grey lighten-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m3">
 
-            <div class="container row">
-                <div class="col s3"></div>
-                <div class="col s6">
-                    <form class="input-field">
-                        <i class="material-icons prefix">search</i>
-                        <input id="city-search" type="text">
-                        <label for="icon_prefix" ></label>
-                        <span class="helper-text" data-error="wrong" data-success="right">Input a City to Look Up the Weather</span>
-                        <button class="btn red waves-effect waves-light" id="city-submit" type="submit" name="action">Submit
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </form>
+                        <!-- SEARCH FOR THE CITY INPUT -->
+                        <div class="row">
+                            <form class="input-field col s12">
+                                <i class="material-icons prefix">search</i>
+                                <input id="city-search" type="text" class="validate">
+                                <label for="icon_prefix"></label>
+                                <span class="helper-text">City Searcher</span>
+                                <button class="btn red waves-effect waves-light" id="city-submit" type="submit" name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="divider"></div>
+
+                        <!-- SAVED RESULTS FROM THE SEARCH -->
+                        <h6 class=previous-cities">Previously Searched Cities</h6>
+                        <div class="collection">
+                        </div>
+                    </div>
+
+                    <!-- MAIN WEATHER SECTION -->
+                    <div class="col s12 m9" id="weather-render">
+
+                        <!-- MAIN CARD WITH TODAY'S WEATHER -->
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="main-weather card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="main card-content">
+                                            <h4>--</h4>
+                                            <div class="row">
+                                                <div class='col s12'>
+                                                    <i class="wi wi-day-rain"></i>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col s6">
+                                                    <ul>
+                                                        <li>Temperature:</li>
+                                                        <li>Humidity:</li>
+                                                        <li>Wind Speed:</li>
+                                                        <li>UV Index:</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col s6">
+                                                    <ul>
+                                                        <li>--</li>
+                                                        <li>--</li>
+                                                        <li>--</li>
+                                                        <li>--</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="./assets/images/sample-1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5 DAY FORECAST -->
+                        <div class="row">
+                            <h4>5 Day Forecast:</h4>
+                            <div class="col s12 m2 daily">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">--</span>
+                                        <i class="wi wi-day-sunny"></i>
+                                    </div>
+                                    <div class="card-action white-text">
+                                        <ul>
+                                            <li>Temperature:</li>
+                                            <li>Humidity:</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col s12 m2 daily">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">--</span>
+                                        <i class="wi wi-day-rain"></i>
+                                    </div>
+                                    <div class="card-action white-text">
+                                        <ul>
+                                            <li>Temperature:</li>
+                                            <li>Humidity:</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m2 daily">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">--</span>
+                                        <i class="wi wi-day-sunny"></i>
+                                    </div>
+                                    <div class="card-action white-text">
+                                        <ul>
+                                            <li>Temperature:</li>
+                                            <li>Humidity:</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m2 daily">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">--</span>
+                                        <i class="wi wi-day-rain"></i>
+                                    </div>
+                                    <div class="card-action white-text">
+                                        <ul>
+                                            <li>Temperature:</li>
+                                            <li>Humidity:</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m2 daily">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">--</span>
+                                        <i class="wi wi-day-sunny"></i>
+                                    </div>
+                                    <div class="card-action white-text">
+                                        <ul>
+                                            <li>Temperature:</li>
+                                            <li>Humidity:</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="col s3"></div>
             </div>
-
+            
         </main>
-<!-- FOOTER START -->
+
+        <!-- FOOTER START -->
     <footer class="page-footer blue darken-4">
         <div class="container row">
             <div class="col s12 center-align">

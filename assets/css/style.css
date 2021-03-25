@@ -32,13 +32,9 @@ main {
 	margin-top: 22.8px;
 }
 
-.card-content li {
-	margin: 5px;
-}
-
 .main.card-content i {
+	margin-top: 5px;
 	font-size: 40px;
-	padding-bottom: 15px;
 }
 
 .forecast {
